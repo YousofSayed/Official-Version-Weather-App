@@ -24,44 +24,7 @@ let bg_img = document.getElementById('bg-i');
     pmOrAm = document.getElementById('pmOram'),
     clockMinutes = document.getElementById('minutes'),
     stateOFDay = document.getElementById('stateOfDay');
-// minutes,
-// hours;
 
-
-//Start set Time
-// setInterval(() => {
-//     const date = new Date;
-//     const hours = (date.getHours());
-//     const minutes = (date.getMinutes())
-//     if ( hours === 24 || hours <= 5) {
-//         bg_img.src = ImgsBodyFornight;
-//         stateOFDay.textContent = 'Good Night';
-//     }
-//      if (hours >= 5) {
-//         bg_img.src = ImgsBodyForMornning;
-//         stateOFDay.textContent = 'Good Mornning';
-//     }
-//      if (hours >= 14) {
-//         bg_img.src = ImgsBodyForEvenning;
-//         stateOFDay.textContent = 'Good Evenning';
-//     }
-
-
-//     clockHours.textContent = hours -12 ;
-//     if (+clockHours.textContent <= 0){
-//         clockHours.textContent = hours + 12
-//     }
-//     clockMinutes.textContent = "0" + minutes;
-//     if (+clockMinutes.textContent >= 10){
-//         clockMinutes.textContent = minutes;
-//     }
-
-//     if (hours <= 12) {
-//         pmOrAm.textContent = 'AM';
-//     } else {
-//         pmOrAm.textContent = 'PM';
-//     }
-// }, 1)
 setInterval(() => {
     const date = new Date;
     const hours = (date.getHours());
@@ -78,7 +41,6 @@ setInterval(() => {
         bg_img.src = ImgsBodyFornight;
         stateOFDay.textContent = 'Good Night';
     }
-// console.log(hours);
 
     clockHours.textContent = hours;
     if (+clockHours.textContent === 0) {
